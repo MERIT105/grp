@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+/usr/bin/python3
 import telebot
 import datetime
 import time
@@ -354,12 +354,12 @@ def handle_attack(message):
     try:
         port = int(port)
         time_duration = int(time_duration)
-        if time_duration > 120:
+        if time_duration > 150:
             send_attack_message(message.chat.id,
                 "╔════════════════════════════════╗\n"
                 "║ 🚫 TIME LIMIT EXCEEDED 🚫 ║\n"
                 "╚════════════════════════════════╝\n\n"
-                "🔹 Maximum attack duration: 120 seconds\n"
+                "🔹 Maximum attack duration: 150 seconds\n"
                 "🔸 Please try with lower time value")
             return
     except ValueError:
